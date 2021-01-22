@@ -248,7 +248,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array){
   let newArray = [];
    for(let i=0; i<array.length; i++){
-     if(Number(array[i]['years'].split("-")[1]) < 2000 && Number(array[i]['years'].split("-")[0] > 1899)) {
+     if(Number(array[i]['years'].split("-")[1]) < 2000 && Number(array[i]['years'].split("-")[0] > 1899)) { //splits 'years' into two different indexes and turns them into numbers
       newArray.push(array[i]['name']);
      }
    }return newArray;
@@ -305,7 +305,7 @@ function lotsOfArt(array){
   let paintingArray = [];
   for(let i=0; i<array.length; i++){
     if(array[i]['paintings'] > 100){
-      paintingArray.push(array[i]['name']);
+      paintingArray.push(array[i]['name']); //adds item into new array
     }
   } return paintingArray;
 }
