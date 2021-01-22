@@ -136,10 +136,13 @@ button:hover{
 }
 
 @media (max-width:500px){
-    nav{
+    nav{                /*spaces the nav apart more */
         width:70%;
     }
-    .artists-container{
+    .title-container div {	/*image is 100% of screen */
+        width:100%;
+    }
+    .artists-container{ /*aligns the images and bio in columns */
         justify-content: center;
         align-items:center;
         flex-flow: column;
@@ -154,12 +157,12 @@ button:hover{
     }
     .artist .bio{
         font-size: 60%;
-        margin-bottom:15%;
+        margin-bottom:10%;
     }
     .artists-container{
         width:80%;
     }
-    hr{
+    hr{     /*hr line across the whole screen */
         margin-inline-start: 0%;
     }
 
