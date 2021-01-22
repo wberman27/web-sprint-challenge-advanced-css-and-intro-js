@@ -143,7 +143,7 @@ button:hover{
     }
     .title-container div {	/*image is 100% of screen */
         width:100%;
-        background-position:center;
+        background-size: 250%; /*this repositions the image*/
     }
     .artists-container{ /*aligns the images and bio in columns */
         justify-content: center;
@@ -154,35 +154,40 @@ button:hover{
     .artist{
         width:100%;
     }
-    .artist img{
-        width:60%;
-        height:40vh;
+    .artist img{ /*resizes artist image sizes to scale for mobile */
+        width:100%;
+        height:30vh;
     }
     .artist .bio{
-        font-size: 60%;
+        font-size: 70%;
         margin-bottom:10%;
     }
     .artists-container{
-        width:80%;
+        width:72%;
+        margin-top:2%;
+    }
+    .artists-container img{
+        width:67%;
     }
     .title-container{ /*allows container to take 100% of page */
         width:100%;
     }
     .title-container hr{ /*allows line to cross entire page */
         width:100%;
+        margin-top:0%;
     }
-    .title-container h1{
+    .title-container h1{ /*makes title smaller */
         font-size: 4rem;
         line-height: 4.5rem;
     }
     nav a{
-        font-size: 2rem;
+        font-size: 2rem; /*reduces nav font size*/
     }
     button{
         margin-top:1%;
     }
     .artist a{
-        font-size:2rem; /*makes artist names smaller */
+        font-size:2rem; /*makes both artists' names smaller */
     }
 
 
